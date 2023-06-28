@@ -1,0 +1,247 @@
+.nav-account {
+  min-height: -webkit-fill-available;
+  flex-direction: column;
+  background: #2d475e;
+  border-right: 1px solid #F1F5F9;
+  box-shadow: 10px 10px 50px rgba(100, 116, 139, 0.04);
+  padding: 0 12px;
+}
+
+.nav-account.nav_full {
+  /* width: 250px; */
+  padding: 0 0 0 12px
+}
+
+.nav-account .txt-menu {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFD34B;
+  margin: 12px 12px 0 12px;
+}
+
+.nav-account.nav_minimize .txt-menu {
+  text-align: center;
+}
+
+.nav-account.nav_minimize {
+  width: 98px;
+  padding-top: 15px;
+}
+
+.nav-account.nav_minimize ul li {
+  justify-content: center;
+}
+
+.nav-account .title {
+  font-size: 30px;
+  text-align: center;
+  line-height: 111%;
+  /* color: #2B479C; */
+  color: #ffffff;
+  padding: 30px 0 10px 0;
+}
+
+.nav-account .divider {
+  height: 2px;
+  width: 350px;
+  background: linear-gradient(90deg, rgba(255, 118, 1, 0) 0%, #FFC10E 99.32%);
+}
+
+.nav-account ul {
+  padding: 5px 0;
+}
+
+.nav-account ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.nav-account ul li:not(:first-of-type) {
+  margin-top: 4px;
+}
+
+.nav-account ul li a {
+  color: #DADADA;
+  height: 45px;
+  align-items: center;
+  display: flex;
+  padding: 0 14px;
+  border-radius: 12px;
+}
+
+.nav-account ul li a.disabled {
+  color: #6c757d;
+}
+
+.nav-account ul li a:hover {
+  background: #cf9238;
+  color: #1C1C1C;
+}
+
+.nav-account ul li a.active {
+  background: #FFA31A;
+  color: #1C1C1C;
+  /* border-left: 4px solid #4b6893; */
+  /* padding-left: 16px; */
+}
+
+.nav-account.nav_minimize ul li a {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-account.nav_minimize ul li svg {
+  margin-right: 0;
+}
+
+.nav-account ul.sub-menu a{
+  height: 40px;
+}
+
+.nav-account ul li ul.sub-menu li.active a {
+  background: radial-gradient(95.59% 167.1% at 32.8% 50%, #d5b079 0%, #f7b249 100%);
+  color: #1C1C1C;
+}
+
+.nav-account ul.sub-menu li {
+  padding: 0 0 0 15px;
+}
+
+.nav-account ul.sub-sub-menu li {
+  padding: 10px 20px;
+  padding-left: 40px;
+  background-color: #213330;
+}
+
+.nav-account ul.sub-menu li a {
+  font-size: 14px;
+}
+
+.nav-account ul li .ps__rail-y {
+  right: 10px !important
+}
+
+.nav-account ul li img,
+.nav-account ul li svg {
+  width: 18.5px;
+  margin-right: 16px;
+}
+
+.nav-account ul li svg path:not(:stroke) {
+  fill: #DADADA;
+}
+
+.nav-account ul li svg path[stroke] {
+  stroke: #DADADA;
+}
+
+.nav-account ul li a.disabled svg path:not(:stroke) {
+  fill: #6c757d;
+}
+
+.nav-account ul li a.disabled svg path[stroke] {
+  stroke: #6c757d;
+}
+
+.nav-account ul li a:hover svg path:not(:stroke),
+.nav-account ul li a.active svg path:not(:stroke) {
+  fill: #1C1C1C;
+}
+
+.nav-account ul li a:hover svg path[stroke],
+.nav-account ul li a.active svg path[stroke] {
+  stroke: #1C1C1C;
+}
+
+.nav-account.nav_minimize ul li.p-0 {
+  position: relative;
+}
+
+.nav-account ul li ul.sub-menu {
+  display: none;
+}
+.nav-account ul li.active ul.sub-menu {
+  display: block;
+}
+
+.nav-account ul li.active a.has-content:first-child{
+  background: #FFA31A;
+  color: #1C1C1C;
+}
+
+.nav-account ul li.active a.has-content:first-child svg path{
+  stroke: #1C1C1C;
+}
+
+.nav-account.nav_minimize ul li.p-0:hover ul.sub-menu {
+  display: block;
+}
+
+.nav-account.nav_minimize ul li.p-0 ul.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 58px;
+  width: 220px !important;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  background: #213330;
+  z-index: 5;
+  display: none;
+}
+
+.nav-account.nav_minimize ul li.p-0 ul.sub-menu li {
+  justify-content: flex-start;
+  border: 2px solid #2e4642;
+  border-width: 0 0 1px 5px;
+}
+/* 
+.nav-account ul.sub-menu li.active {
+  background: #182537;
+  color: #60b9e9;
+}
+
+.nav-account ul.sub-menu li.active a {
+  color: #60b9e9;
+} */
+
+.nav-account ul.sub-sub-menu li:hover a,
+.nav-account ul.sub-menu li:hover a {
+  /* background: #33D8BB; */
+  color: #ffffff;
+}
+
+.nav-account .nav-logout {
+  padding: 0 16px;
+  color: #DADADA;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 16px;
+  margin: 10px 12px 0 0;
+  cursor: pointer;
+}
+
+.nav-account.nav_minimize .nav-logout {
+  text-align: center;
+}
+
+.nav-account .nav-logout:hover {
+  background: #3C3C3C;
+  border-radius: 12px;
+}
+
+.nav-account .nav-logout span {
+  padding-left: 16px;
+}
+
+.nav-account .nav-logout svg path {
+  stroke: #DADADA;
+}
+

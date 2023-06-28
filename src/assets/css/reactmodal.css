@@ -1,0 +1,94 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 32, 44, 0.3);
+}
+
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
+.ReactModalPortal .card {
+  border: none;
+}
+
+.ReactModalPortal .card .card-header {
+  border-bottom: 0;
+  background: transparent;
+  padding: 0;
+  color: #283991;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 111%;
+}
+
+.ReactModalPortal .p-header {
+  background: #FFFFFF;
+  color: #1C1C1C;
+  margin-bottom: 0;
+}
+
+.ReactModalPortal {
+  color: #3C3C3C;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.react-datepicker-popper {
+  z-index: 1000000;
+}
+
+.react-confirm-alert-overlay {
+  z-index: 10000;
+}
+
+.react-confirm-alert .custom-ui-confirm {
+  text-align: center;
+  width: 500px;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgb(0 0 0 / 23%);
+  color: #1A202C;
+}
+
+.custom-ui-confirm>h1 {
+  margin-top: 0;
+}
+
+.custom-ui-confirm>button {
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #f4da9e;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  background: none;
+  color: #1A202C;
+  font-size: 14px;
+}
+
+.custom-ui-confirm>button:hover {
+  background-color: #FD7E14;
+  color: #fff;
+}
+
+.custom-ui-confirm>button:active,
+.custom-ui-confirm>button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-order.hasError {
+  border-color: #ff5555;
+}
+
+.react-confirm-alert-button-group{
+  justify-content: center;
+}
